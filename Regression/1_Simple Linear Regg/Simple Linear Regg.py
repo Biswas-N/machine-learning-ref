@@ -3,7 +3,7 @@
 # Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
-import pandas as pd
+import pandas as pd # Used to access and work with File system n data sets
 
 # Importing the dataset
 dataset = pd.read_csv('Salary_Data.csv')
