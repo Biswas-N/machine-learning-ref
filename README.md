@@ -6,10 +6,10 @@ This is an Reference Repo for the basic concepts and algorithms of Machine Learn
 
 ### Dependencies
 - Python (v3.5+)
-- scikit-learn (v0.19.1)
-- Numpy (v1.13.3)
-- Matplotlib (v2.1.1)
-- Pandas (v0.22.0)
+- scikit-learn (v0.19.0+)
+- Numpy (v1.13.0+)
+- Matplotlib (v2.1.0+)
+- Pandas (v0.21.0+)
 
 ### Installing Dependencies
 - Using [Pip](https://pypi.python.org/pypi/pip)
@@ -23,7 +23,7 @@ This is an Reference Repo for the basic concepts and algorithms of Machine Learn
    ```bash
    $ conda install scikit-learn
    $ conda install numpy
-   $ conda install matplotlib
+   $ conda install matplotlib 
    $ conda install pandas
    ```
 
