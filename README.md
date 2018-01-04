@@ -11,6 +11,22 @@ This is an Reference Repo for the basic concepts and algorithms of Machine Learn
 - Matplotlib (v2.1.1)
 - Pandas (v0.22.0)
 
+### Installing Dependencies
+- Using [Pip](https://pypi.python.org/pypi/pip)
+   ```bash
+   $ pip install scikit-learn
+   $ pip install numpy
+   $ pip install matplotlib
+   $ pip install pandas
+   ```
+- Using [Conda](https://conda.io/docs)
+   ```bash
+   $ conda install scikit-learn
+   $ conda install numpy
+   $ conda install matplotlib
+   $ conda install pandas
+   ```
+
 # Topics
 - Data Processing
 - Regression
