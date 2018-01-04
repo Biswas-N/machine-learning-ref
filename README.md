@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Language-Python-blue.svg) ![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars) ![PyPI](https://img.shields.io/pypi/status/Django.svg)
+![](https://img.shields.io/badge/Language-Python-blue.svg) ![PyPI](https://img.shields.io/badge/status-beta-yellow.svg)
 # Machine Learning Ref
 This is an Reference Repo for the basic concepts and algorithms of Machine Learning.
 
