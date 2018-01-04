@@ -1,3 +1,4 @@
+![](https://img.shields.io/badge/Language-Python-blue.svg) 
 # Machine Learning Ref
 This is an Reference Repo for the basic concepts and algorithms of Machine Learning.
 
