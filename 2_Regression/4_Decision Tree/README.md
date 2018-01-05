@@ -21,7 +21,7 @@ Later these scatter plot splits are constructed into decision trees.
 - Dependent Variable: Salary
 
 # Code
-```bash
+```py
 # Decision Tree Regression
 
 # Importing the libraries
