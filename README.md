@@ -5,8 +5,11 @@ This is an Reference Repo for the basic concepts and algorithms of Machine Learn
 ### Machine Learning
 [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning) is the set of techniques that gives computers the ability to learn without being explicitly programmed.
 
-### Dependencies
+### Software
 - [Python (v3.5+)](https://www.python.org/)
+- [Anaconda](https://www.anaconda.com/download/)
+- Spyder (Comes included in Anaconda)
+### Dependencies
 - scikit-learn (v0.19.0+)
 - Numpy (v1.13.0+)
 - Matplotlib (v2.1.0+)
