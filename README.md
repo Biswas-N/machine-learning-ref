@@ -34,6 +34,9 @@ This is an Reference Repo for the basic concepts and algorithms of Machine Learn
 # Topics
 - Data Processing
 - Regression
-  - Linear
-  - Multiple
-  - Polynomial
+   - Simple Linear
+   - Multiple Linear
+   - Polynomial
+   - Support Vector
+   - Decision Tree
+   - Random Forest
