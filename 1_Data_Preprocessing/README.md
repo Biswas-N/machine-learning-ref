@@ -23,7 +23,10 @@ To best explain this situation lets take some example data:
 There are two categorical values: Country and Purchased. As machine learning models are mathematical models, we might get some unexpected results if we use such categorical variable. Thus we use Encoders to convert such variables into numbers. So we Use two encoders: [**LabelEncoder**](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html) and [**OneHotEncoder**](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html).
 
 ### Splitting Data
+[Sklearn's train_test_split class](http://scikit-learn.org/stable/modules/cross_validation.html) is used to split the data into train and test sets.
 
+### Feature Scaling
+If we consider the above same data shown in Encoding Categorical Variables section, the values of age is much smaller than the values of salary. So in such cases, Models can create a system assuming that the output is more dependent on salary than on age. So to avoid such cases, we use [Sklearn's StandardScaler](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) to scale the values cantered around 0.  
 
 ## Code
 ```py
@@ -48,8 +51,18 @@ X[:,:] = imputer.fit_transform(X[:,:])
 #Encoding Values of X
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder # Classes for Encoding data
 labelEncoder_X = LabelEncoder()
-X[:,0] = labelEncoder_X.fit_transform(X[:,0])
-oneHotEncoder_X = OneHotEncoder(categorical_features = [0])
+X[:,:] = labelEncoder_X.fit_transform(X[:,:])
+oneHotEncoder_X = OneHotEncoder(categorical_features = [*****Index of Categorical Column*****])
 X = oneHotEncoder_X.fit_transform(X).toarray()
+
+#splitting the data set to Training and Test
+from sklearn.cross_validation import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0) # test_size is the percentage of test set size (20% in this case)
+
+#Feature Scaling
+from sklearn.preprocessing import StandardScaler
+sc_X = StandardScaler()
+X_train = sc_X.fit_transform(X_train)
+X_test = sc_X.fit_transform(X_test)
 ```
 
